@@ -1,0 +1,372 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.continer{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+width: 100%;
+
+}
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding:15px;
+   
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+hr{
+    width: 200px;
+    margin: 10px auto;
+   border:1px solid rgb(199, 199, 6);
+
+}
+
+/*hearder start*/
+header{
+    background-color: rgb(38, 206, 218);
+    padding: 0% 1%;
+    text-align: center;
+}
+.row a{
+   
+    
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid white;
+    
+} 
+nav ul li{
+    display:block;
+ }
+ nav ul li a{
+    display:block;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+   
+ }
+ nav ul li a:hover{
+    background-color: rgb(14, 33, 33);
+   
+ }
+
+ /*hearder end*/
+
+ /*main start*/
+ 
+ 
+/*banner start*/ 
+
+#banner{
+    background-image: url("image/restaurant-image.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 15px;
+   text-align: center;
+}
+
+.banner-contant{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+#banner h1{
+    background-color:yellow;
+    font-family: "Satisfy", serif;
+    width:100%;
+    padding: 15px;
+    font-size:3rem;
+    margin: 15px auto;
+    
+}
+#banner p{
+    background-color:green;
+    font-family: "Fira Sans", serif;
+    width: 300px;
+  color: white;
+    height:50px;
+    padding:10px;
+    
+    margin: 10px auto;
+}
+
+.btn{
+    background-color: green;
+    border: none;
+    color: white;
+    width: 165px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transform: 4s;
+}
+
+.btn:hover{
+transform: scale(1.2);
+
+}
+/*banner start*/
+
+/*about start*/
+#about-us{
+    text-align: center;
+    padding: 40px;
+}
+#about-us h1{
+    padding: 20px;
+    font-size: 2rem;
+}
+
+
+/*about end*/
+#food-manu{
+    padding: 1% 7%;
+ box-shadow: 1px 2px 4px black;
+
+    
+    
+}
+.manu-card{
+   transition: 0.4s;
+   
+}
+
+.manu-card:hover{
+   transform: scale(1.1);
+}
+.manu-card{
+    text-align: center;
+   
+}
+.manu-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.manu-card h1{
+    background-color: green;
+    color: white;
+}
+
+.manu-desc{
+    background-color: gray;
+}
+.manu-desc h6{
+    
+    color:white;
+    font-size: large;  
+}
+
+.manu-desc>p {
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+#contact{
+   background-color: rgb(61, 59, 59);
+   padding: 1%;
+  
+}
+.map{
+    width: 100%;
+    height: 250px;
+   
+}
+.contact-details{
+   
+   color: white;
+   padding: 20px 0;
+   text-align: center;
+}
+.contact-details p{ 
+    font-size: 0.8rem;
+}
+
+
+ /*main end*/ 
+
+ /* footer start*/ 
+
+ footer{ 
+    background-color :#060930;
+    padding: 1%;
+    color: white;
+    
+}
+
+footer p{
+    
+    line-height: 32px;
+    font-size: 0.8rem;
+    text-align:center;
+    
+}
+ .footer-icon{
+    text-align: center;
+   
+ }
+
+ 
+    
+.icon{
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: .4s;
+  color: white;
+  text-align: center;
+
+  
+ }
+
+ .icon:hover{
+    background-color: greenyellow;
+    transform: scale(1.2);
+ }
+
+
+ 
+
+@media(min-width:576px) {
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}   
+.col-sm-3 {width: 25%;}  
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+    
+}
+
+
+
+
+@media(min-width:768px) {
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}   
+.col-md-3 {width: 25%;}  
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+    
+}
+
+
+
+
+@media(min-width: 992px) {
+    .resturant-logo{
+        text-align: left;
+    }
+
+    nav ul{
+       text-align: right;
+    }
+    nav ul li{
+        display: inline-block;
+       
+    }
+
+    nav ul li a{
+        display: inline-block;
+        margin: 10px;
+        transition: .4;
+    }
+
+    nav ul li a:hover{
+       background-color: transparent;
+       transform: scale(1.2);
+       text-decoration: underline;
+       border-radius: 0;
+      
+    }
+
+
+    #banner{
+           position: relative;
+           height: 100vh;
+    }
+
+    .banner-contant{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+    }
+
+    #banner h1{
+        width: 700px;
+    }
+    
+    #banner p{
+        width: 500px;
+    }
+
+    /*footer */ 
+    footer p{
+        text-align: left;
+    }
+    .footer-icon {
+        text-align: right;
+    }
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}   
+.col-lg-3 {width: 25%;}  
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+    
+}
+
+
+
+ 
+
